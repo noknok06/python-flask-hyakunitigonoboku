@@ -33,8 +33,8 @@ section>h2 {
     text-align: left; /* テキストは左寄せ */
     overflow-wrap: break-word; /* テキストの折り返し */
     padding: 10px; /* 必要に応じて適切なパディングを設定 */
-    border: 1px solid #ccc; /* 枠線を追加（任意） */
-    background-color: #f7f7f7; /* 背景色を設定（任意） */
+    /* border: 1px solid #ccc; 枠線を追加（任意） */
+    /* background-color: #f7f7f7; 背景色を設定（任意） */
 }
 
 

@@ -27,19 +27,24 @@ $(document).ready(function() {
             type: 'POST',
             data: formData, // フォームデータを送信
             dataType: 'json', // レスポンスのデータ形式をJSONとして期待
-            success: function(data) {
+            success: function() {
                 var response = data.response; // レスポンスデータから回答を取得
 
-                // 1文字ずつレスポンスを表示する処理
+                // 文字列全体をアニメーション表示する処理
                 var i = 0;
                 var interval = setInterval(function() {
                     if (i < response.length) {
-                        $('#response').append(response[i]);
+                        // 改行文字の処理
+                        if (response[i] === '\n') {
+                            $('#response').append('<br>');
+                        } else {
+                            $('#response').append(response[i]);
+                        }
                         i++;
                     } else {
                         clearInterval(interval); // 表示完了後にインターバルをクリア
                     }
-                }, 50); // 50ミリ秒ごとに1文字表示（アニメーション効果）
+                }, 25); // 50ミリ秒ごとに1文字表示（アニメーション効果）
             },
             error: function(xhr, status, error) {
                 console.error('Error:', error); // エラーハンドリング（必要に応じて）
