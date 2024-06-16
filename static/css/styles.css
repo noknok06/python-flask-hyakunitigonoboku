@@ -1,0 +1,54 @@
+section {
+    height: 25vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section>h1 {
+    font-size: 2rem;
+}
+
+section>h2 {
+    font-size: 1.5rem;
+}
+
+.top{
+
+    /* background-image: url(../image/yuuyake.jpeg); */
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.contents{
+    text-align: center;
+    padding-top: 5vh;
+}
+
+#response {
+    font-family: monospace;
+    /* white-space: pre; */
+    width: 50%;
+    margin: auto; /* 中央配置 */
+    text-align: left; /* テキストは左寄せ */
+    overflow-wrap: break-word; /* テキストの折り返し */
+    padding: 10px; /* 必要に応じて適切なパディングを設定 */
+    border: 1px solid #ccc; /* 枠線を追加（任意） */
+    background-color: #f7f7f7; /* 背景色を設定（任意） */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
